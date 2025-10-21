@@ -129,3 +129,33 @@ switch ($day) {
 echo "<br>";
 
 
+// ----- 10. LOOPS -----
+echo "<h2>10. Loops</h2>";
+
+// For loop
+for ($i = 1; $i <= 5; $i++) {
+    echo "For Loop Count: $i<br>";
+}
+
+// While loop
+$j = 1;
+while ($j <= 3) {
+    echo "While Loop Count: $j<br>";
+    $j++;
+}
+
+// Do-While loop
+$k = 1;
+do {
+    echo "Do-While Loop Count: $k<br>";
+    $k++;
+} while ($k <= 2);
+
+// Foreach loop
+echo "Foreach Loop on Skills: ";
+foreach ($skills as $skill) {
+    echo "$skill ";
+}
+echo "<br><br>";
+
+
