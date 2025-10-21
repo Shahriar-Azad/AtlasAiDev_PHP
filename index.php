@@ -194,3 +194,21 @@ print_r($fruits);
 echo "<br><br>";
 
 
+// ----- 13. SUPERGLOBALS -----
+echo "<h2>13. Superglobals</h2>";
+echo "PHP_SELF: " . $_SERVER["PHP_SELF"] . "<br>";
+echo "SERVER_NAME: " . $_SERVER["SERVER_NAME"] . "<br>";
+echo "HTTP_HOST: " . $_SERVER["HTTP_HOST"] . "<br>";
+echo "SCRIPT_NAME: " . $_SERVER["SCRIPT_NAME"] . "<br>";
+echo "REQUEST_METHOD: " . $_SERVER["REQUEST_METHOD"] . "<br>";
+
+// Example of GET
+echo "<br><b>Example of GET Superglobal:</b><br>";
+echo "Use URL like: ?user=Shahriar<br>";
+if (isset($_GET["user"])) {
+    echo "Hello, " . htmlspecialchars($_GET["user"]) . "!";
+} else {
+    echo "No user provided.";
+}
+
+?>
