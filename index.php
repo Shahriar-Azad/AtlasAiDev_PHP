@@ -80,3 +80,27 @@ echo "Constant (define): " . SITE_NAME . "<br>";
 echo "Constant (const): " . VERSION . "<br><br>";
 
 
+// ----- 7. MAGIC CONSTANTS -----
+echo "<h2>7. Magic Constants</h2>";
+echo "__FILE__: " . __FILE__ . "<br>";
+echo "__DIR__: " . __DIR__ . "<br>";
+echo "__LINE__: " . __LINE__ . "<br>";
+echo "__FUNCTION__: (inside function below)<br><br>";
+
+function showMagic() {
+    echo "__FUNCTION__: " . __FUNCTION__ . "<br>";
+}
+showMagic();
+
+
+// ----- 8. OPERATORS -----
+echo "<h2>8. Operators</h2>";
+$x = 5;
+$y = 10;
+echo "Addition: " . ($x + $y) . "<br>";
+echo "Comparison (==): " . var_export($x == $y, true) . "<br>";
+echo "Comparison (!=): " . var_export($x != $y, true) . "<br>";
+echo "Logical AND (&&): " . var_export(($x < $y && $y > 5), true) . "<br>";
+echo "Logical OR (||): " . var_export(($x > $y || $y > 5), true) . "<br><br>";
+
+
