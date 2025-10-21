@@ -104,3 +104,28 @@ echo "Logical AND (&&): " . var_export(($x < $y && $y > 5), true) . "<br>";
 echo "Logical OR (||): " . var_export(($x > $y || $y > 5), true) . "<br><br>";
 
 
+// ----- 9. IF-ELSE & SWITCH -----
+echo "<h2>9. Conditionals</h2>";
+$score = 85;
+if ($score >= 90) {
+    echo "Grade: A+<br>";
+} elseif ($score >= 80) {
+    echo "Grade: A<br>";
+} else {
+    echo "Grade: Below A<br>";
+}
+
+$day = "Tuesday";
+switch ($day) {
+    case "Monday":
+        echo "Start of the week.<br>";
+        break;
+    case "Tuesday":
+        echo "Second day!<br>";
+        break;
+    default:
+        echo "Mid or end of week.<br>";
+}
+echo "<br>";
+
+
