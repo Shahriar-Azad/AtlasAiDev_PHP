@@ -61,3 +61,22 @@ var_dump($boolVar);
 echo "<br><br>";
 
 
+// ----- 5. MATH FUNCTIONS -----
+echo "<h2>5. Math Functions</h2>";
+echo "Absolute: " . abs(-10) . "<br>";
+echo "Round: " . round(5.67) . "<br>";
+echo "Ceil: " . ceil(4.1) . "<br>";
+echo "Floor: " . floor(4.9) . "<br>";
+echo "Min: " . min(3, 9, 5) . "<br>";
+echo "Max: " . max(3, 9, 5) . "<br>";
+echo "Random: " . rand(1, 100) . "<br><br>";
+
+
+// ----- 6. CONSTANTS -----
+echo "<h2>6. Constants</h2>";
+define("SITE_NAME", "My PHP Site");
+const VERSION = "1.0.0";
+echo "Constant (define): " . SITE_NAME . "<br>";
+echo "Constant (const): " . VERSION . "<br><br>";
+
+
