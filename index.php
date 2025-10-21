@@ -159,3 +159,38 @@ foreach ($skills as $skill) {
 echo "<br><br>";
 
 
+// ----- 11. FUNCTIONS -----
+echo "<h2>11. Functions</h2>";
+
+function greet($name = "Guest") {
+    return "Hello, $name!";
+}
+
+echo greet($name) . "<br>";
+echo greet() . "<br>";
+
+function add($a, $b) {
+    return $a + $b;
+}
+
+echo "Sum Function: " . add(10, 20) . "<br><br>";
+
+
+// ----- 12. ARRAYS -----
+echo "<h2>12. Arrays</h2>";
+$fruits = ["Apple", "Banana", "Cherry"];
+$person = ["name" => "Shahriar", "age" => 25, "city" => "Dhaka"];
+
+echo "Indexed Array: ";
+print_r($fruits);
+echo "<br>Associative Array: ";
+print_r($person);
+echo "<br>";
+
+echo "Count: " . count($fruits) . "<br>";
+array_push($fruits, "Orange");
+echo "After Push: ";
+print_r($fruits);
+echo "<br><br>";
+
+
